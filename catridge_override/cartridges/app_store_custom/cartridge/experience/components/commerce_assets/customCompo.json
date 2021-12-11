@@ -1,0 +1,74 @@
+{
+    "name": "Components to add images",
+    "description": "Components to add images and redirection url",
+    "group": "commerce_assets",
+    "attribute_definition_groups": [
+      {
+        "id": "componentaddimages",
+        "attribute_definitions": [
+          {
+            "id": "image_banner",
+            "name": "Image",
+            "type": "image",
+            "required": true
+          },
+          {
+              "id": "bannerimage2",
+              "name": "Image Mobile",
+              "description": "Upload Image Mobile",
+              "type": "image",
+              "required": true
+          }
+          ,
+          {
+              "id": "buttontext",
+              "name": "Button Text",
+              "description": "Enter the button text",
+              "type": "string",
+              "required": true
+          },
+          {
+              "id": "redirecturl",
+              "name": "Redirect Url",
+              "description": "Enter the Redirect URL",
+              "type": "url",
+              "required": true
+          } ,
+          {
+            "id": "color",
+            "name": "Color",
+            "description": "Enter the color",
+            "type": "string",
+            "required": true
+        } ,
+          {
+            "id": "positionhorizontal",
+            "name": "Horizontal",
+            "description": "horizontal alignment (left, center, right)",
+            "type": "enum",
+            "values": [
+                "left",
+                "center" ,
+                "right"
+            ],
+            "default_value": "left"
+            
+        },
+        {
+          "id": "positionvertical",
+          "name": "Vertical",
+          "description": "Vertical alignement (top, middle, bottom)",
+          "type": "enum",
+          "values": [
+              "top",
+              "middle" ,
+              "bottom"
+          ],
+          "default_value": "top"
+          
+      }
+        ]
+      }
+    ],
+    "region_definitions": []
+  }
